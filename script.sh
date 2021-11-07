@@ -26,7 +26,7 @@ months=(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)
 unzip -qq $1 -d $2/temp 2> $2/log.txt
 
 # check exit code of unzip if success then continue
-# else exit control
+# else error control
 if [ $? == 0 ]
 then
 	for file in $2/temp/*
